@@ -20,7 +20,7 @@ abstract class BankAccount{
         this.balance=initialValue
     }
     
-    deposite(amount:number):void{
+    deposit(amount:number):void{
         this.balance+=amount
     }
    abstract  withdraw(amount:number):void
@@ -41,7 +41,7 @@ class savingAccount extends BankAccount{
 }
 
 const savings =new savingAccount(1000)
-savings.deposite(2000)
+savings.deposit(2000)
 savings.withdraw(3000)
 console.log(savings.getBalance())
 

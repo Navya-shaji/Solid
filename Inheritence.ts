@@ -32,7 +32,7 @@ class BankAccount{
         this.balance=initialValue
     }
     
-    deposite(amount:number):void{
+    deposit(amount:number):void{
         this.balance+=amount
     }
     withdraw(amount:number):void{
@@ -57,7 +57,7 @@ class Interest extends BankAccount{
     
     addInterest():void{
         const interest=this.balance*(this.interest/100)
-        this.deposite(interest)
+        this.deposit(interest)
         console.log(`the interest amount ${interest} added`)
     }
 }

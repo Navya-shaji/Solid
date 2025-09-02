@@ -6,7 +6,7 @@ class Encap{
         this.balance=initialValue
     }
     
-    deposite(amount:number):void{
+    deposit(amount:number):void{
         this.balance+=amount
     }
     withdraw(amount:number):void{
@@ -21,6 +21,6 @@ class Encap{
     }
 }
 const bank=new Encap(1000)
-bank.deposite(200)
+bank.deposit(200)
 bank.withdraw(100)
 console.log(bank.getBalance())

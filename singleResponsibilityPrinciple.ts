@@ -4,7 +4,7 @@ class SBI{
         this.balance=initialAmount
     }
     
-    deposite(amount:number):void{
+    deposit(amount:number):void{
       this.balance+=amount
     }
     withdraw(amount:number):void{
@@ -27,7 +27,7 @@ class AccountDetails{
 }
 
 const amount=new SBI(100)
-amount.deposite(50)
+amount.deposit(50)
 amount.withdraw(100)
 const printer=new AccountDetails()
 printer.print(amount)
